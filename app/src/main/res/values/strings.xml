@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">T1_Aplicativos_Grupo8</string>
+
+    <string name="Email">Email</string>
+    <string name="Login">Iniciar Sesion</string>
+    <string name="resgis">Registrate</string>
+    <string name="name">Nombre</string>
+    <string name="registrar">Registrar</string>
+    <string name="ConfirmPassword">Confirmar Contraseña</string>
+    <string name="Password">Contraseña</string>
+    <string name="Send">Enviar</string>
+    <string name="welcome">Bienvenido a la AppMovil Trujillo!</string>
+    <string name="folowus">Siguenos en nuestras redes sociales</string>
+    <string name="cuenta">Todavia no tienes una cuenta?</string>
+    <string name="back">Volver</string>
+
+    <string name="facebook">facebook</string>
+    <string name="twitter">twitter</string>
+    <string name="instagram">instagram</string>
+    <string name="linkedin">linkedin</string>
+    <string name="youtube">youtube</string>
+
+    <string name="alreadyText">Ya tienes una cuenta?</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yelow">#FDBA30</color>
+
+    <color name="facebook">#1876F2</color>
+    <color name="youtube">#FD0002</color>
+    <color name="instagram">#FE5252</color>
+    <color name="linkin">#2868B2</color>
+    <color name="twitter">#1C9AEE</color>
+</resources>
