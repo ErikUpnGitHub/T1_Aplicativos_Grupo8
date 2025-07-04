@@ -1,0 +1,51 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Sección: Gestión -->
+    <item
+        android:title="Gestión"
+        android:enabled="false" />
+
+    <item
+        android:id="@+id/nav_users"
+        android:title="   Usuarios" />
+    <item
+        android:id="@+id/nav_students"
+        android:title="   Estudiantes" />
+    <item
+        android:id="@+id/nav_professors"
+        android:title="   Profesores" />
+
+    <!-- Sección: Académico -->
+    <item
+        android:title="Académico"
+        android:enabled="false" />
+
+    <item
+        android:id="@+id/nav_courses"
+        android:title="   Cursos" />
+    <item
+        android:id="@+id/nav_classes"
+        android:title="   Clases" />
+    <item
+        android:id="@+id/nav_schedules"
+        android:title="   Horarios" />
+    <item
+        android:id="@+id/nav_enrollments"
+        android:title="   Matrículas" />
+
+    <!-- Sección: General -->
+    <item
+        android:title="General"
+        android:enabled="false" />
+
+    <item
+        android:id="@+id/nav_notifications"
+        android:title="   Notificaciones" />
+    <item
+        android:id="@+id/nav_config"
+        android:title="   Configuración" />
+    <item
+        android:id="@+id/nav_logout"
+        android:title="   Cerrar Sesión" />
+
+</menu>

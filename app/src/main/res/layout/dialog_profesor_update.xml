@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#121212"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actualizar Profesor"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/idInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID del Profesor"
+            android:inputType="number"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BDBDBD"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/nombreInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BDBDBD"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BDBDBD"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BDBDBD"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/deptoInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Departamento"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#BDBDBD"
+            android:layout_marginBottom="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancelarBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="Cancelar"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:backgroundTint="@color/yelow"
+                android:paddingVertical="10dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/actualizarBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="Actualizar"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:backgroundTint="@color/yelow"
+                android:paddingVertical="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/editIdUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID del Estudiante"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editIdClase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID de la Clase"
+        android:inputType="number"
+        android:layout_marginTop="12dp" />
+</LinearLayout>
