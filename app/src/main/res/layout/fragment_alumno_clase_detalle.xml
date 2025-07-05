@@ -1,36 +1,46 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background_yellow">
 
     <TextView
         android:id="@+id/tvTituloClase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Detalle de Clase"
+        android:text="@string/detalle_clase"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginBottom="12dp" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnAlumnoVerTareas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ver Tareas"
+        android:text="@string/ver_tareas"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:cornerRadius="12dp"
+        android:backgroundTint="@color/yelow"
         android:layout_marginBottom="8dp" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnAlumnoVerParticipantes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ver Participantes"
+        android:text="@string/ver_participantes"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:cornerRadius="12dp"
+        android:backgroundTint="@color/yelow"
         android:layout_marginBottom="8dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Horarios:"
+        android:text="@string/horarios"
         android:textStyle="bold"
         android:layout_marginTop="16dp" />
 

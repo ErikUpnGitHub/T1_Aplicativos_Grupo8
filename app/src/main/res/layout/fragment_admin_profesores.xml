@@ -1,16 +1,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background_yellow">
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnAgregarProfesor"
         android:text="Agregar Profesor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:cornerRadius="16dp"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="16dp"
+        android:backgroundTint="@color/yelow" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerProfesores"

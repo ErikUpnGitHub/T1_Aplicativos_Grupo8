@@ -3,30 +3,31 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E3F2FD">
+    android:background="@drawable/background_yellow"
+    android:padding="20dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Tus Clases"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="#0D47A1"
-            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:gravity="start"
             android:layout_marginBottom="16dp" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerClasesProfesor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:padding="16dp"
             android:clipToPadding="false"
-            android:paddingBottom="16dp"/>
+            android:layout_marginTop="8dp"
+            android:paddingBottom="16dp" />
     </LinearLayout>
 </ScrollView>

@@ -1,31 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_yellow"
     android:padding="16dp">
 
-    <LinearLayout
+<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
-            android:text="Gestión de Usuarios"
+            android:text="@string/titulo_gestion_usuarios"
             android:textSize="20sp"
             android:textStyle="bold"
+            android:textColor="@android:color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnAgregarUsuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Agregar Usuario"
-            android:layout_marginTop="12dp"/>
+            android:text="@string/btn_agregar_usuario"
+            android:layout_marginTop="12dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:cornerRadius="16dp"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:backgroundTint="@color/yelow" />
 
         <EditText
             android:id="@+id/editBuscar"
-            android:hint="Buscar usuario"
+            android:hint="@string/hint_buscar_usuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableStart="@android:drawable/ic_menu_search"

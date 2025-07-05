@@ -1,15 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background_yellow">
 
-    <Button
-        android:id="@+id/btnRegistrarMatricula"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAgregarProfesor"
+        android:text="@string/btn_agregar_profesor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registrar Matrícula" />
+        android:layout_gravity="start"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:cornerRadius="16dp"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="16dp"
+        android:backgroundTint="@color/yelow" />
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerMatriculas"
