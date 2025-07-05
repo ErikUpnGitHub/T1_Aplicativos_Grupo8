@@ -12,4 +12,12 @@ interface MatriculaDao {
 
     @Query("SELECT * FROM matricula WHERE idusuario = :idUsuario")
     suspend fun obtenerPorUsuario(idUsuario: Int): List<Matricula>
+
+    @Query("""
+    SELECT u.* FROM usuario u
+    INNER JOIN matricula m ON m.idusuario = u.idusuario
+    WHERE m.idclase = :idclase
+    """)
+    suspend fun obtenerAlumnosDeClase(idclase: Int): List<Usuario>
+
 }

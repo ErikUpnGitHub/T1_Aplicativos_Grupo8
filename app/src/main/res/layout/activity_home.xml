@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background_yellow">
 
     <!-- Contenido principal -->
     <LinearLayout
@@ -16,9 +17,11 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:title="Inicio" />
+            android:background="@color/yelow"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="Inicio"
+            app:titleTextAppearance="@style/ToolbarTitleBold"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
         <!-- Aquí va tu contenido -->
         <FrameLayout
@@ -33,6 +36,9 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:background="@android:color/white"
+        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/black"
         app:menu="@menu/menu_estudiante"
         app:headerLayout="@layout/nav_header" />
 </androidx.drawerlayout.widget.DrawerLayout>

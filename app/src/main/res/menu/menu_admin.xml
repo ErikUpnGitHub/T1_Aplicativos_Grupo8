@@ -39,12 +39,6 @@
         android:enabled="false" />
 
     <item
-        android:id="@+id/nav_notifications"
-        android:title="   Notificaciones" />
-    <item
-        android:id="@+id/nav_config"
-        android:title="   Configuración" />
-    <item
         android:id="@+id/nav_logout"
         android:title="   Cerrar Sesión" />
 

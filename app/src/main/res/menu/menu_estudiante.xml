@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/nav_home" android:title="Inicio" />
-    <item android:id="@+id/nav_courses" android:title="Mis Cursos" />
-    <item android:id="@+id/nav_grades" android:title="Mis Notas" />
-    <item android:id="@+id/nav_schedule" android:title="Mi Horario" />
-    <item android:id="@+id/nav_logout" android:title="Cerrar Sesión" />
+    <item
+        android:id="@+id/nav_student_classes"
+        android:title="Mis Clases" />
+    <item
+        android:id="@+id/nav_student_matricula"
+        android:title="Matricularse" />
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Cerrar sesión" />
 </menu>

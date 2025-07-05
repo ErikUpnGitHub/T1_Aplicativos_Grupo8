@@ -1,40 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout_profesor"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfesorActivity">
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background_yellow">
 
-    <!-- Contenido principal -->
+    <!-- Contenedor principal con Toolbar y contenido -->
     <LinearLayout
         android:id="@+id/main"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar_profesor"
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+            android:background="@color/yelow"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="Panel Profesor"
+            app:titleTextAppearance="@style/ToolbarTitleBold"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
         <FrameLayout
-            android:id="@+id/content_frame_profesor"
+            android:id="@+id/content_frame"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="0dp"
+            android:layout_weight="1" />
     </LinearLayout>
 
-    <!-- Menú lateral -->
+    <!-- Menú lateral de navegación -->
     <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigation_view_profesor"
+        android:id="@+id/navigation_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:menu="@menu/menu_profesor" />
-
+        android:background="@android:color/white"
+        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/black"
+        app:menu="@menu/menu_profesor"
+        app:headerLayout="@layout/nav_header" />
 </androidx.drawerlayout.widget.DrawerLayout>

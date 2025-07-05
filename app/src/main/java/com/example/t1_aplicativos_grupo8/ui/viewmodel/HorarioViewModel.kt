@@ -37,4 +37,11 @@ class HorarioViewModel(application: Application) : AndroidViewModel(application)
             _horarios.value = horarioDao.buscar(query)
         }
     }
+
+    fun cargarPorClase(idclase: Int) {
+        viewModelScope.launch {
+            _horarios.value = horarioDao.obtenerPorClase(idclase)
+        }
+    }
+
 }

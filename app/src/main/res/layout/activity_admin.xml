@@ -4,7 +4,8 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background_yellow">
 
   <!-- Contenedor principal con Toolbar y contenido -->
   <LinearLayout
@@ -18,9 +19,12 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:title="Panel Admin" />
+        android:background="@color/yelow"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Panel Admin"
+        app:titleTextAppearance="@style/ToolbarTitleBold"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
 
     <FrameLayout
         android:id="@+id/content_frame"
@@ -37,6 +41,9 @@
       android:layout_height="match_parent"
       android:layout_gravity="start"
       android:fitsSystemWindows="true"
+      android:background="@android:color/white"
+      app:itemTextColor="@color/black"
+      app:itemIconTint="@color/black"
       app:menu="@menu/menu_admin"
       app:headerLayout="@layout/nav_header" />
 

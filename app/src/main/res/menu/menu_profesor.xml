@@ -1,8 +1,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/nav_prof_clases"
+        android:id="@+id/nav_professor_classes"
         android:title="Mis Clases"/>
+
     <item
-        android:id="@+id/nav_prof_logout"
-        android:title="Cerrar sesión"/>
+        android:id="@+id/nav_logout"
+        android:title="Cerrar Sesión"/>
 </menu>

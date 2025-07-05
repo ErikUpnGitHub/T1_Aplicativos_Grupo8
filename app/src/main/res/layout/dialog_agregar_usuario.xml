@@ -1,35 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:padding="16dp"
     android:orientation="vertical"
+    android:background="@drawable/rounded_white_bg"
+    android:padding="20dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <EditText
         android:id="@+id/editNombre"
-        android:hint="Nombre"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_nombre"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp" />
 
     <EditText
         android:id="@+id/editApellido"
-        android:hint="Apellido"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_apellido"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp" />
 
     <EditText
         android:id="@+id/editEmail"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp" />
 
     <EditText
         android:id="@+id/editContrasenia"
-        android:hint="Contraseña"
-        android:inputType="textPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_contrasenia"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp" />
 
     <Spinner
         android:id="@+id/spinnerRol"

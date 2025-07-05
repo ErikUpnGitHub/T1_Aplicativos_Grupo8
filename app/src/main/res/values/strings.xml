@@ -31,6 +31,28 @@
     <string name="close">Cerrar menú</string>
     <string name="navigation_drawer_open">Abrir menú</string>
     <string name="navigation_drawer_close">Cerrar menú</string>
+
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_apellido">Apellido</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_contrasenia">Contraseña</string>
+    <string name="hint_carrera">Carrera</string>
+
+    <string name="hint_dia">Día (Ej: Lunes)</string>
+    <string name="hint_hora_inicio">Hora inicio (HH:MM)</string>
+    <string name="hint_hora_fin">Hora fin (HH:MM)</string>
+    <string name="hint_id_clase">ID Clase</string>
+
+    <string name="hint_especialidad">Especialidad</string>
+    <string name="hint_rol">Rol</string>
+    <string name="hint_id_estudiante">ID del Estudiante</string>
+    <string name="hint_titulo_tarea">Título</string>
+    <string name="hint_descripcion_tarea">Descripción</string>
+    <string name="hint_fecha_entrega">Fecha de entrega</string>
+    <string name="btn_agregar_clase">Agregar Clase</string>
+
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

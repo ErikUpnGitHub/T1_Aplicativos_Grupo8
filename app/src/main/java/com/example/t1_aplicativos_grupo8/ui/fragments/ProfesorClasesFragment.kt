@@ -18,7 +18,12 @@ class ProfesorClasesFragment : Fragment() {
     private lateinit var viewModel: ClasesProfesorViewModel
     private lateinit var adapter: ClaseProfesorAdapter
 
-    private val idProfesor: Int = 2 // <-- Cámbialo según el ID del profesor actual
+    private var idProfesor: Int = -1 // <-- Cámbialo según el ID del profesor actual
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        idProfesor = arguments?.getInt("idusuario", -1) ?: -1
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,9 +37,19 @@ class ProfesorClasesFragment : Fragment() {
 
         recyclerView = view.findViewById(R.id.recyclerClasesProfesor)
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
+
         adapter = ClaseProfesorAdapter(emptyList()) { claseSeleccionada ->
-            // Aquí iría la acción al hacer clic sobre la clase (abrir otra pestaña, etc.)
+            val fragment = ProfesorClaseDetalleFragment().apply {
+                arguments = Bundle().apply {
+                    putInt("idclase", claseSeleccionada.idclase)
+                }
+            }
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.content_frame, fragment) // Asegúrate que tu layout tenga este ID
+                .addToBackStack(null)
+                .commit()
         }
+
         recyclerView.adapter = adapter
 
         viewModel = ViewModelProvider(

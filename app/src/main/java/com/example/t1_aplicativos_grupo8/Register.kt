@@ -77,7 +77,7 @@ class Register : AppCompatActivity() {
                         email = email,
                         contrasenia = password,
                         telefono = "",
-                        idrol = 1
+                        idrol = 3
                     )
 
                     db.usuarioDao().insertarYObtenerId(nuevoUsuario)

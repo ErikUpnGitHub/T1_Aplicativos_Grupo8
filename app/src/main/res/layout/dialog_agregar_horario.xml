@@ -1,31 +1,55 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:padding="16dp"
+    android:padding="20dp"
     android:orientation="vertical"
+    android:background="@drawable/rounded_white_bg"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <EditText
         android:id="@+id/editDia"
-        android:hint="Día (Ej: Lunes)"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_dia"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp" />
 
     <EditText
         android:id="@+id/editHoraInicio"
-        android:hint="Hora inicio (HH:MM)"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_hora_inicio"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp" />
 
     <EditText
         android:id="@+id/editHoraFin"
-        android:hint="Hora fin (HH:MM)"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_hora_fin"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp" />
 
     <EditText
         android:id="@+id/editIdClase"
-        android:hint="ID Clase"
-        android:inputType="number"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_id_clase"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp" />
 </LinearLayout>

@@ -15,4 +15,8 @@ interface HorarioDao {
 
     @Query("SELECT * FROM horario WHERE dia LIKE '%' || :query || '%'")
     suspend fun buscar(query: String): List<Horario>
+
+    @Query("SELECT * FROM horario WHERE idclase = :idclase")
+    suspend fun obtenerPorClase(idclase: Int): List<Horario>
+
 }

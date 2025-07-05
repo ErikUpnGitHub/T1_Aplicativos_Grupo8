@@ -19,4 +19,7 @@ interface CursoDao {
 
     @Query("SELECT * FROM curso WHERE nombre LIKE '%' || :query || '%' ORDER BY nombre ASC")
     suspend fun buscar(query: String): List<Curso>
+
+    @Query("SELECT * FROM curso WHERE idcurso = :id")
+    suspend fun obtenerPorId(id: Int): Curso?
 }

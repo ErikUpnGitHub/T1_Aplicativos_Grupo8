@@ -21,4 +21,7 @@ interface UsuarioDao {
 
     @Insert
     suspend fun insertarYObtenerId(usuario: Usuario): Long
+
+    @Query("SELECT * FROM usuario WHERE idusuario = :id")
+    suspend fun obtenerPorIdSync(id: Int): Usuario
 }

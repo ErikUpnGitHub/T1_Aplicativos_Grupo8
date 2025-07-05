@@ -3,6 +3,8 @@
     <style name="Base.Theme.T1_Aplicativos_Grupo8" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="materialAlertDialogTheme">@style/CustomAlertDialog</item>
     </style>
 
     <style name="Theme.T1_Aplicativos_Grupo8" parent="Base.Theme.T1_Aplicativos_Grupo8" />

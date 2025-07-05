@@ -21,12 +21,14 @@ class HomeActivity : AppCompatActivity() {
 
         val idrol = intent.getIntExtra("idrol", 0)
         val nombreUsuario = intent.getStringExtra("nombreUsuario") ?: "Usuario"
+        val idUsuario = intent.getIntExtra("idusuario", -1)
 
         // Redirigir según rol
         when (idrol) {
             1 -> {
                 startActivity(Intent(this, EstudianteActivity::class.java).apply {
                     putExtra("idrol", idrol)
+                    putExtra("idusuario", idUsuario)
                     putExtra("nombreUsuario", nombreUsuario)
                 })
                 finish()
@@ -35,6 +37,7 @@ class HomeActivity : AppCompatActivity() {
             2 -> {
                 startActivity(Intent(this, ProfesorActivity::class.java).apply {
                     putExtra("idrol", idrol)
+                    putExtra("idusuario", idUsuario)
                     putExtra("nombreUsuario", nombreUsuario)
                 })
                 finish()
@@ -43,6 +46,7 @@ class HomeActivity : AppCompatActivity() {
             3 -> {
                 startActivity(Intent(this, AdminActivity::class.java).apply {
                     putExtra("idrol", idrol)
+                    putExtra("idusuario", idUsuario)
                     putExtra("nombreUsuario", nombreUsuario)
                 })
                 finish()
@@ -79,9 +83,9 @@ class HomeActivity : AppCompatActivity() {
         // Detectar clics en el menú
         navigationView.setNavigationItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.nav_home -> {
-                    // Acción para "Inicio"
-                }
+                //R.id.nav_home -> {
+                //    // Acción para "Inicio"
+                //}
                 R.id.nav_courses -> {
                     // Acción para "Mis Cursos"
                 }

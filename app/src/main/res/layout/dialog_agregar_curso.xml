@@ -1,19 +1,30 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:background="@drawable/rounded_white_bg"
+    android:padding="20dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <EditText
         android:id="@+id/editNombreCurso"
-        android:hint="Nombre del curso"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:hint="Nombre del curso"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp" />
 
     <EditText
         android:id="@+id/editDescripcionCurso"
-        android:hint="Descripción"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"/>
+        android:hint="Descripción"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp" />
 </LinearLayout>

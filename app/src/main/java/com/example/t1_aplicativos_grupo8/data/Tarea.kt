@@ -10,6 +10,6 @@ data class Tarea(
     val idclase: Int,
     val titulo: String,
     val descripcion: String?,
-    val tipo: String?, // Por si se quiere diferenciar luego (tarea, examen, etc.)
+    val tipo: String?,
     val fecha_entrega: Date
 )

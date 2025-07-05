@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:background="@drawable/rounded_white_bg"
+    android:padding="20dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -9,14 +9,24 @@
         android:id="@+id/editIdUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="ID del Estudiante"
-        android:inputType="number" />
+        android:hint="@string/hint_id_estudiante"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_marginBottom="12dp" />
 
     <EditText
         android:id="@+id/editIdClase"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="ID de la Clase"
+        android:hint="@string/hint_id_clase"
         android:inputType="number"
-        android:layout_marginTop="12dp" />
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp" />
 </LinearLayout>

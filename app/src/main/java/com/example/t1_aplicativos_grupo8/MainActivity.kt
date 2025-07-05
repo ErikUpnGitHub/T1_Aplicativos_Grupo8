@@ -2,7 +2,6 @@ package com.example.t1_aplicativos_grupo8
 
 import android.util.Log
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
@@ -11,12 +10,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
-import androidx.room.Room
 import com.example.t1_aplicativos_grupo8.data.Usuario
 import com.example.t1_aplicativos_grupo8.db.AppDatabase
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
 import kotlinx.coroutines.launch
+import androidx.core.net.toUri
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,8 +24,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -51,7 +48,7 @@ class MainActivity : AppCompatActivity() {
 
         // Abrir redes
         fun openWebPage(url: String) {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+            val intent = Intent(Intent.ACTION_VIEW, url.toUri())
             startActivity(intent)
         }
 
@@ -89,6 +86,7 @@ class MainActivity : AppCompatActivity() {
                         if (usuario != null) {
                             val intent = Intent(this@MainActivity, HomeActivity::class.java)
                             intent.putExtra("idrol", 3)
+                            intent.putExtra("idusuario", usuario.idusuario)
                             intent.putExtra("nombreUsuario", usuario.nombre) // <== ESTE es importante
                             startActivity(intent)
 
